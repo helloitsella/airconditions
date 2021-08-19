@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/ac/style.css" />
+
+    </head>
+    <body>
+        <div id="bg"></div>
+
+        <div id="content">
+            <img id="chair" src="/assets/chair.png"><br>
+           <p> <button id="info">INFO</button> &nbsp; <button id="listen">LISTEN</button> &nbsp; <button id="contact">CONTACT</button> &nbsp; <button id="collab">COLLABORATION</button></p>
+            <div id="texts">
+
+           <embed src="/ac/info.html">
+
+          
+            </div>
+            
+</div>
+       <script>
+           const texts = document.getElementById('texts');
+            const buttons = document.querySelectorAll('button');
+            
+            for (const b of buttons){
+                b.addEventListener('click', () => {
+                    console.log('you selected', b.id);
+                        texts.innerHTML = `<embed src='/ac/${b.id}.html'>`
+            })};
+       </script>
+    </body>
+</html>
+

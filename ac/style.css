@@ -1,0 +1,71 @@
+body{
+    font-size: x-large;
+    display: flex;
+align-items: center;
+justify-content: center;
+background: rgb(67, 67, 90);
+}
+#bg{
+   position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+ 
+mix-blend-mode: multiply;
+
+opacity: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: url('/ac/assets/ac_bg-min.png');
+    background-size: cover ;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: hue-rotate(190deg);
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+#content{
+    width: 60%;
+    margin: auto;
+    position: fixed;
+    text-align: center;
+   
+}
+
+#texts{
+    text-align: center;
+}
+
+embed {
+    width: 60vw;
+    height: 60vh;
+    max-width: 800px;
+}
+
+button{
+    background: none;
+	color: red;
+    border: 1px solid red;
+    text-decoration: underline;
+	padding: 0.5vw;
+	font: inherit;
+    outline: inherit;
+    cursor: pointer;
+}
+
+
+#chair{
+    filter: contrast(4);
+    width: 180px;
+    padding: 10px;
+}

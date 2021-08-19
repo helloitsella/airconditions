@@ -1,0 +1,61 @@
+body{
+    font-size: 30;
+    display: flex;
+align-items: center;
+justify-content: center;
+
+}
+#bg{
+   position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    filter: hue-rotate(190deg);
+
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/air-conditions-bg-2.gif");
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    background-size: cover;
+}
+
+#content{
+    width: 60%;
+    margin: auto;
+    position: fixed;
+    text-align: center;
+   
+}
+
+#heroimg{
+    opacity: 100%;
+    width: 60vw;
+  
+  
+filter: hue-rotate(90deg);
+    color: red;
+  
+    image-rendering: pixelated;
+}
+
+#text{
+    color: red;
+    
+}
+#chair{
+    filter: contrast(4);
+    width: 30%;
+}
+
+
+#enter{
+    font-size: xx-large;
+    text-decoration: none;
+    color: red;
+    border: 1px solid red;
+    padding: 3px;
+}
