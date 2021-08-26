@@ -1,58 +1,64 @@
-body{
-    font-size: 30;
+body {
+    font-size: large;
     display: flex;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 
 }
-#bg{
-   position:fixed;
-    padding:0;
-    margin:0;
 
-    top:0;
-    left:0;
+#bg {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+
+    top: 0;
+    left: 0;
 
     filter: hue-rotate(190deg);
-
+    opacity: 40%;
     width: 100%;
     height: 100%;
-    background-image: url("/assets/air-conditions-bg-2.gif");
+    background-image: url("/assets/ac_bg_2.gif");
     background-repeat: no-repeat;
     image-rendering: pixelated;
     background-size: cover;
 }
 
-#content{
+#content {
     width: 60%;
     margin: auto;
     position: fixed;
     text-align: center;
-   
+
 }
 
-#heroimg{
+#heroimg {
     opacity: 100%;
     width: 60vw;
-  
-  
-filter: hue-rotate(90deg);
+
+
+    filter: blur(0.3px);
     color: red;
-  
-    image-rendering: pixelated;
+
+    image-rendering: smooth;
 }
 
-#text{
+#text {
     color: red;
-    
+
 }
-#chair{
+
+#chair {
     filter: contrast(4);
     width: 30%;
 }
 
+h1 {
+    font-weight: normal;
+    font-size: 70;
+}
 
-#enter{
+#enter {
     font-size: xx-large;
     text-decoration: none;
     color: red;
