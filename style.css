@@ -1,12 +1,18 @@
+html{
+    width: 100%;
+    height:100%;
+}
 body {
+    width: 100%;
+    height: 100%;
     font-size: large;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'VT323', monospace;
+    background-color:rgb(200, 166, 255);
     background-image: linear-gradient(180deg, 
-                                       rgba(255, 255, 255) 20%,
-                                       rgba(243, 151, 255, 0.6) );
+                                       rgba(255, 255, 255, 0.6) 20%,
+                                       rgb(243, 149, 255) );
+    background-size: cover;
+    background-repeat: no-repeat;                                     
 }
 
 #bg {
@@ -25,23 +31,21 @@ body {
     background-size: cover;
 }
 
-#content {
-    width: 60%;
-    margin: auto;
-    position: fixed;
+#container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-#heroimg {
-    opacity: 100%;
-    width: 60vw;
-    filter: blur(0.3px);
-    color: red;
-    image-rendering: smooth;
-}
-
 #text {
-    color: red;
+    flex-basis: 80%;
+    flex-shrink: 0%;
+    flex-grow: 0%;
+    color: white;
+    z-index: 0;
 }
 
 #chair {
@@ -54,20 +58,24 @@ body {
     filter: contrast(0);
 }
 
-h1 {
+#text h1 {
     font-weight: normal;
-    font-size: 70;
+    font-size: 5em;
+    padding: 0px;
+    margin: 0%;
 }
 
 #enter {
+    background: rgba(0, 0, 0, 0);
     font-size: xx-large;
     text-decoration: none;
-    color: red;
-    border: 1px solid red;
+    color: white;
+    border: 1px solid white;
     padding: 3px;
-    transition: background .9s;
+    z-index: 1;
+    transition: background-color .9s;
 }
 
 #enter:hover{
-    background: rgba(247, 0, 255, 0.5);
+    background-color: rgba(247, 0, 255, 0.5);
 }

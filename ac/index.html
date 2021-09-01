@@ -1,93 +1,81 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <link rel="stylesheet" type="text/css" href="/ac/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div id="bg"></div>
-  
-       
-   <div id="c"> <div id='tdiv'><img src="assets/tokens/info.png" class="token"></div> 
-</div>
+
+
+    <div id="c">
+        <div id='tdiv'><img src="assets/tokens/info.png" class="token"></div>
+    </div>
+
     <div id="content">
-        <a href="../index.html"><img id="chair" src="../assets/chair.png"></a> <br>
-        <p> <button id="info">INFO</button> &nbsp; &nbsp; <button id="listen">LISTEN</button> &nbsp; &nbsp; <button
-                id="collab">COLLABORATION</button> &nbsp; &nbsp; <button id="contact">CONTACT</button> </p>
-               
-              
-                <div id="texts">
-
-            <embed src="/ac/info.html">
-
+        <div class="header"><a href="../index.html"><img id="chair" src="../assets/chair.png"></a></div>
+        <div class="nav"><button id="info">INFO</button></div>
+        <div class="nav"><button id="listen">LISTEN</button></div>
+        <div class="nav"><button id="collab">COLLABORATION</button></div>
+        <div class="nav"><button id="contact">CONTACT</button> </div>
+        <div id="texts">
             
-               
+            <embed src="/ac/info.html">
+        </div>
+    </div>
+    <p>
+
+        
+
+
 
         </div>
-     
-            
 
-    </div>
-    
-    <script>
-        // webpage variables
-        const body = document.getElementById('body');
-        const texts = document.getElementById('texts');
-        const buttons = document.querySelectorAll('button');
-        let tdiv = document.querySelector('#tdiv');
-        let token = document.querySelector('.token');
-        console.log(tdiv.width);
-        let maxwidth = window.innerWidth;
-        let maxheight = window.innerHeight;
+        <script>
+            // webpage variables
+            const body = document.getElementById('body');
+            const texts = document.getElementById('texts');
+            const buttons = document.querySelectorAll('button');
+            let tdiv = document.querySelector('#tdiv');
+            let token = document.querySelector('.token');
+            console.log(tdiv.width);
+            let maxwidth = window.innerWidth;
+            let maxheight = window.innerHeight;
 
-        function transformStr() {
-  const w = Math.random() * (maxwidth);
-  const h = Math.random() * (maxheight);
-  return `translate(${w}px, ${h}px)`
-}
-        // randomise position
+            function transformStr() {
+                const w = Math.random() * (maxwidth);
+                const h = Math.random() * (maxheight);
+                return `translate(${w}px, ${h}px)`
+            }
+            // randomise position
 
 
-        for (const b of buttons) {
-            b.addEventListener('click', () => {
-                console.log('you selected', b.id);
-                texts.innerHTML = `<embed src='/ac/${b.id}.html'>`;
-                token.src = `assets/tokens/${b.id}.png`;
-            })
-        };
+            for (const b of buttons) {
+                b.addEventListener('click', () => {
+                    console.log('you selected', b.id);
+                    texts.innerHTML = `<embed src='/ac/${b.id}.html'>`;
+                    token.src = `assets/tokens/${b.id}.png`;
+                })
+            };
 
-        function animate() { 
-    tdiv.style.transform = transformStr()
-  }
+            function animate() {
+                tdiv.style.transform = transformStr()
+            }
 
-tdiv.style.transform = transformStr();
-  setTimeout(animate, 0);
+            tdiv.style.transform = transformStr();
+            setTimeout(animate, 0);
 
-setInterval(animate, 70)
-       
-        
-
-        // all details stored in array
-        // match id of button clicked with id of image in array
-        // store that image in an empty variable 
-        // for each button press
-        // update new token as new Token
-
-        // starting point random between image w/h and client w/h
-        // should walk around more
-        // smoother animation (lerp integars, slow down) 
-       
-       
+            setInterval(animate, 70)
 
 
-        
-       
 
-    </script>
+        </script>
 </body>
 
 </html>
