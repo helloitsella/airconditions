@@ -183,7 +183,7 @@ embed{
     #bg{
         height: 1200px;
         background-repeat: none;
-        backrgound-size:
+        background-size: cover;
     }
 
     #content{
@@ -197,6 +197,7 @@ embed{
 
         button{
             width: 130px;
+            padding: 0px;
         }
 
         #texts{
