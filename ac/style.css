@@ -18,6 +18,8 @@ body {
     justify-content: center;
     margin: 0%;
     padding: 0%;
+    background-attachment: fixed;
+
 
 }
 
@@ -28,12 +30,13 @@ body {
     height: 100%;
     flex-grow: 0%;
     flex-shrink: 0%;
-    background: url('/ac/assets/ac_bg-min.png');
+    background:  url('/ac/assets/ac_bg-min.png');
     background-size: cover;
     image-rendering: pixelated;
     background-repeat: no-repeat;
     background-position: center;
     filter: hue-rotate(190deg);
+
 }
 
 #c {
@@ -172,6 +175,17 @@ embed{
 
 @media (max-width: 640px){
 
+    body{
+        height: 1200px;
+     
+    }
+
+    #bg{
+        height: 1200px;
+        background-repeat: none;
+        backrgound-size:
+    }
+
     #content{
         width: 90%;
     }
@@ -182,7 +196,7 @@ embed{
         }
 
         button{
-            width: 150px;
+            width: 130px;
         }
 
         #texts{
@@ -194,6 +208,17 @@ embed{
             max-width: 80px;
         }
 
+        embed{
+            height: 1000px;
+            overflow: auto;
+        }
+
+
+        #content{
+position: absolute;
+        }
+
+       
      
     
 }
