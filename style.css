@@ -31,6 +31,21 @@ body {
     background-size: cover;
 }
 
+#swirl {
+   position: fixed;
+   top: 10%;
+   left: 10%;
+   filter: brightness(7);
+   mix-blend-mode:overlay;
+}
+
+
+#swirl img{
+    width: 30%;
+    filter: hue-rotate(40deg);
+    
+}
+
 #container {
     height: 100%;
     width: 100%;
