@@ -7,7 +7,7 @@ body {
     height: 100%;
     font-size: large;
     font-family: 'VT323', monospace;
-    
+    overflow-x: hidden;
     background-size: cover;
     background-repeat: no-repeat;                                     
 }
@@ -51,10 +51,20 @@ body {
    left: 10%;
    filter: brightness(7);
    mix-blend-mode:overlay;
+   width: 40%;
+}
+
+#swirl2{
+    position: fixed;
+    bottom: 10%;
+    left: 75%;
+    filter: brightness(7);
+    mix-blend-mode:overlay;
+    width: 40%;
 }
 
 
-#swirl img{
+#swirl img, #swirl2 img{
     width: 40%;
     filter: hue-rotate(40deg);
 }
@@ -81,6 +91,7 @@ body {
     flex-grow: 0%;
     color: white;
     z-index: 0;
+    font-size: x-large;
 }
 
 #next{
@@ -121,7 +132,9 @@ body {
 }
 
 @media (max-width: 640px){
-
+    body{
+        overflow-x: hidden;
+    }
     #text h1{
         font-size: 3em;
     }
@@ -137,15 +150,15 @@ body {
 
     .container{
         padding-top: 30%;
-        height: 50%;
+        height: 70%;
         padding-bottom: 0%;
     }
     #next {
        height: 100%;
         padding-top: 0%;
         margin-top: 0px;
-        overflow: auto;
-        padding-bottom: 20%;
+        overflow: visible;
+        padding-bottom: 30%;
 
     }
 }
