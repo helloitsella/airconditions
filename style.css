@@ -95,7 +95,7 @@ body {
 }
 
 #next{
-    padding-top: 0%;
+    padding-top: 1.5%;
     padding-bottom: 10%;
 
 }
@@ -149,8 +149,8 @@ body {
     }
 
     .container{
-        padding-top: 30%;
-        height: 70%;
+        padding-top: 20%;
+        height: 90%;
         padding-bottom: 0%;
     }
     #next {
