@@ -57,3 +57,10 @@ mark{
     font-size:small;
   }
 }
+
+.coming-soon{
+  filter:grayscale();
+  width: 70px;
+
+  
+}

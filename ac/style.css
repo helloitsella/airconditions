@@ -169,6 +169,8 @@ button:hover {
     filter: contrast(4);
     image-rendering: pixelated;
 }
+
+
 embed{
     width:100%;
     margin: 0%;
