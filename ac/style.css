@@ -162,6 +162,7 @@ button:hover {
     width: 110px;
     padding: 40px;
     transition: filter .9s;
+    image-rendering: pixelated;
 }
 
 #chair:hover {

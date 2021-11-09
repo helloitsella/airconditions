@@ -8,6 +8,7 @@ body {
     font-size: large;
     font-family: 'VT323', monospace;
     overflow-x: hidden;
+    overflow-y: hidden;
     background-size: cover;
     background-repeat: no-repeat;                                     
 }
@@ -103,14 +104,16 @@ body {
     padding-bottom: 10%;
 
 }
-#chair {
-    filter: contrast(4);
-    width: 30%;
-    transition: filter .9s;
+.save {
+   filter: contrast(4);
+   width: 15%;
+   
+    image-rendering: pixelated;
+
 }
 
-#chair:hover{
-    filter: contrast(0);
+.save:hover{
+    filter: contrast(0.4);
 }
 
 #text h1 {
