@@ -159,7 +159,7 @@ button:hover {
 
 #chair {
     filter: contrast(0);
-    width: 110px;
+    width: 70px;
     padding: 40px;
     transition: filter .9s;
     image-rendering: pixelated;
@@ -167,6 +167,7 @@ button:hover {
 
 #chair:hover {
     filter: contrast(4);
+    image-rendering: pixelated;
 }
 embed{
     width:100%;
